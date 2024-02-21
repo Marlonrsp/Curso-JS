@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5 Links e Img</title>
+</head>
+<style>
+    #cabecalho-um{
+        background: purple;
+    }
+    .parag-um{
+        background-color: aqua;
+    }
+    .img-luffy{
+        width: 250px;
+        height: 200px;
+    }
+    .bloq-cit{
+        background-color: aquamarine;
+    }
+    .vermelho{
+        font-size: 24px;
+        color: red; 
+    }
+</style>
+<body>
+    <h1 id="cabecalho-um">Cabeçalho</h1>
+    
+    <p class="parag-um"><b>Lorem</b> <strong>ipsum</strong> <i>dolor</i> <em>sit</em> amet consectetur 
+    adipisicing elit. Nemo <small>recusandae</small> <u>voluptates</u> 
+    optio, <a href="http://www.google.com.br" target="_blank">magni</a> quidem dignissimos eos sequi earum 
+    impedit! <span class="vermelho">Expedita</span> commodi <b><del>vermelho</del></b> <ins>azul</ins> dolorum explicabo 2<sup>2</sup>
+    necessitatibus H<sub>2</sub>O at <q>aliquid</q> ullam <s>veritatis</s> 
+    <br><a href="https://ovicio.com.br/wp-content/uploads/2023/08/20230806-one-piece-gear-6-theory.jpg" target="_blank">
+        <img class="img-luffy" src="https://ovicio.com.br/wp-content/uploads/2023/08/20230806-one-piece-gear-6-theory.jpg" alt="Luffy na sua forma Deus Sol Nika">
+    </a><br> 
+    laborum?
+    </p>
+    <hr>
+    <blockquote class="bloq-cit">Nesse campo eu estou fazendo um bloco de citação</blockquote>
+    <hr>
+    <pre>
+        <code>// DADOS PRIMITIVOS: STRING, NUMBER, UNDEFINED, NULL, BOOLEAN ,SYMBOL
+            const nome = 'Marlon'; // String
+            const nome1 = 'Rafael'; // String
+            const nome2 = 'Santos'; // String
+            const num1 = 10; //number
+            const num2 = 10.85; // number
+            let nomeAluno;// undefined = não tem apontamento para nenhum local na memoria;
+            let sobrenomeAluno = null; //também não aponta para nenhum local na memoria;
+            const aprovado = true; //boolean = true or false (lógico)
+            //const boolean = false;
+            
+            console.log(typeof nome, nome);
+            console.log(typeof num2, num2);
+            console.log(typeof nomeAluno, nomeAluno);
+            console.log(typeof sobrenomeAluno, sobrenomeAluno);
+            console.log(aprovado, aprovado);
+            </code>
+    </pre>
+    <di class="vermelho">
+        Eu sou um bloco.
+    </di>
+    <!--
+        Tags que são usadas dentro do parágrafo = <p>
+        <b>      Bold = Negrito
+        <strong> Strong = também assim como a tag <b> deixa o texto em negrito, porém, ela é semantica, ou seja, tem um significado, então ela não é igual a tag <b>. É muito usada para leitores de texto, principalmente para quem tem deficiência visual, o leitor do texto irá destacar fortemente a palavra contida na tag <strong>
+        <i>      Itálico = deixa o texto em formato itálico
+        <em>     Ênfase = também deixa o texto em Itálico, porém, o leitor de texto irá dar uma ênfase na frase que contém essa tag. por exemplo: "Eu 'aaammooooo' (ênfase) churrasco!".     
+        <a href=""> LINK
+        <img>    Imagem = essa tag não tem corpo, então tudo o que for colocar nela é somente atributo, e não tem tag de fechamento.
+        <del>    Errata = pra não precisar apagar ou excluir, essa tag da um "risco" no item ou palavra para indiciar que é uma errata
+        <ins>    Inserte = Adição 
+        <s>      tag riscada = é física o mesmo como o Bold, a diferença para <del> é que del é semantica.  
+        <u>      Underline ou Underscore = mesmo caso da tag <s> sendo uma tag física,porém, sua parecida a <ins> é semantica. 
+        <small>  pequeno = deixar a palavra em minúsculo.
+        <sup>    tag de elevação ou seja subir = exemplo 2^2 (dois elevado a dois).
+        <sub>    tag de rebaixar = exemplo H2O.
+        <br>     quebra de linha.
+        <q>      citação ou "" aspas.
+        <code>   tag para introduzir um código aparente na página 
+        <span>   = é um container genérico = inline usada dentro do <p>
+        -----------------------------------------------------
+        Tags que são usadas "fora" do parágrafo
+        <blockquote> = bloco de citação, ele ja possui um espaço pré-definido no corpo da página. Nesse blockquote pode se usar a tag <p> de parágrafo
+        <hr>         = linha de separação, ela é uma tag que não tem corpo ou seja não possiu um "</hr>".
+        <pre>        = tag de texto pré formatado, tudo o que for colocado nela vai se manter, mais fácil para ler um código.
+        <div>        = não é inline, é um bloco, mas ainda sim é genérica.
+    -->
+</body>
+</html>
