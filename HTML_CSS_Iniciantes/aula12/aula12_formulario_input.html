@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: sans-serif;
+    }
+    label{
+        cursor: pointer;
+        display: block;
+        text-transform: uppercase;
+    }
+    ::placeholder {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    p{
+        text-transform: uppercase;
+    }
+</style>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <h1>Formulário Online</h1>
+        <h2>Cadastro de Usuário</h2>
+        <p>
+            <label for="nome">Nome:</label> 
+                <input type="text" id="nome" name="nome" placeholder="Digite seu Nome" required/>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu Email" required/>
+        </p>
+        <p>
+            <label for="telefone">Telefone: </label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu Telefone" required/>
+        </p>
+
+        <p>
+            <label for="genero">Gênero:</label>
+            Masculino:
+            <input type="radio" id="masculino" name="genero" value="masculino"/>
+            Feminino:
+            <input type="radio" id="feminino" name="genero" value="feminino"/>
+            Outro:
+            <input type="radio" id="outro" name="genero">
+        </p>
+
+        <p>
+            <label for="pcd">É Pessoa com deficiência?</label>
+            Sim:
+            <input type="radio" id="pcd" name="pcd" value="sim"/>
+            Não:
+            <input type="radio" id="pcd" name="pcd" value="não"/>
+        </p>
+        <p>
+            <button type="reset">Resetar</button>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+</body>
+</html>
